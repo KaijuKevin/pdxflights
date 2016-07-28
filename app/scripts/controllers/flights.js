@@ -8,10 +8,11 @@
  * Controller of the pdxflightsApp
  */
 angular.module('pdxflightsApp')
-  .controller('FlightsCtrl', function () {
+  .controller('FlightsCtrl', ['$scope', function ($scope) {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-  });
+    $scope.flights = [{"name": "pdx"}]
+  }]);
